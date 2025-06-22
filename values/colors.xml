@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="primary_blue">#002F6C</color>  <!-- Dark Blue (Sign-in Button) -->
+    <color name="input_background">#F5F5F5</color> <!-- Light Gray Input Background -->
+    <color name="text_dark">#333333</color> <!-- Dark Gray Text -->
+    <color name="hint_text">#757575</color> <!-- Light Gray Hint -->
+    <color name="gray">#777777</color>
+    <color name="blue">#3366FF</color>
+    <color name="light_gray">#EEEEEE</color>
+    <color name="light_blue">#DDEEFF</color>
+    <color name="chat_bg">#E3E3E3</color>
+    <color name="orange">#FF9800</color>
+</resources>

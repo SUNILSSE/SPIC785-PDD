@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <!-- Top Bar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:background="#002D72"
+        android:padding="12dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="259dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Alumni Success"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <!-- Main Content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sruthi R"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_marginBottom="8dp" />
+
+            <ImageView
+                android:id="@+id/al1"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/frame2"
+                android:layout_marginBottom="8dp" />
+
+            <Button
+                android:id="@+id/al2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Read new story"
+                android:backgroundTint="#002D72"
+                android:textColor="#FFFFFF" />
+
+            <!-- Alumni Cards -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:weightSum="2">
+
+                <!-- Sarah Lee Card -->
+                <LinearLayout
+                    android:id="@+id/al3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:background="@color/light_gray"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/rectangle2" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="Google"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sarah Lee"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="147dp"
+                        android:text="I co-founded a small AI startup during my final year, which gave me real-world experience in problem-solving and leadership. This experience helped me stand out in my Google interviews, where I now work as an AI Research Engineer. Never stop learning and building projects"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <!-- Rahul Sharma Card -->
+                <LinearLayout
+                    android:id="@+id/al4"
+                    android:layout_width="0dp"
+                    android:layout_height="325dp"
+                    android:layout_weight="1"
+                    android:background="@color/light_gray"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="121dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/rectangle4" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="Microsoft"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rahul Sharma"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="138dp"
+                        android:text="After facing multiple job rejections, I realized I needed to upskill. I dedicated myself to learning full-stack development and open-source contributions. My persistence paid off when I got an offer from Microsoft. Failure is just a stepping stone to success!"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Bottom Navigation -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#002D72"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:weightSum="5">
+
+        <ImageView
+            android:id="@+id/id1"
+            android:layout_width="0dp" android:layout_weight="1"
+            android:layout_height="wrap_content" android:src="@drawable/chaticon"
+            android:contentDescription="Home" android:padding="8dp" />
+        <ImageView
+            android:layout_width="0dp" android:layout_weight="1"
+            android:layout_height="wrap_content" android:src="@drawable/bookicon"
+            android:contentDescription="Messages" android:padding="8dp" />
+        <ImageView
+            android:id="@+id/id3"
+            android:layout_width="0dp" android:layout_weight="1"
+            android:layout_height="wrap_content" android:src="@drawable/todoicon"
+            android:contentDescription="Tasks" android:padding="8dp" />
+        <ImageView
+            android:id="@+id/id4"
+            android:layout_width="0dp" android:layout_weight="1"
+            android:layout_height="wrap_content" android:src="@drawable/marketicon"
+            android:contentDescription="Marketplace" android:padding="8dp" />
+        <ImageView
+            android:id="@+id/id5"
+            android:layout_width="0dp" android:layout_weight="1"
+            android:layout_height="wrap_content" android:src="@drawable/usericon"
+            android:contentDescription="Profile" android:padding="8dp" />
+    </LinearLayout>
+</LinearLayout>
